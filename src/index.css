@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
+
+body {
+  font-family: 'Oswald';
+   font-size: 20px;
+   min-width: 400px;
+   max-width: 1000px;
+   min-height: 1000px;
+   margin: 0 auto;
+   background-image: linear-gradient(top, rgb(0, 0, 0), rgb(45, 5, 83) );
+   color: rgb(255, 255, 255);
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, [col] minmax(300px, 200px));
+  grid-template-rows: repeat(2, [row] minmax(300px, 200px));
+}
+h1{
+  background-color:rgba(25, 7, 90, 0.26);
+}
+.cristmasLights {
+  grid-column: col 1 / col 3;
+  background-color:rgba(25, 7, 90, 0.26);
+  line-height: 0;  
+}
+li {
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  border-radius: 50%;
+  }
+button {
+    margin-top: 20px;
+    width: 200px; 
+    height: 40px;
+    border: 5px solid rgb(89, 110, 98);
+    border-radius: 10px;
+    background-color:green;
+    font-size: 22px;
+    color: rgb(252, 252, 252);
+  }
+.controls{
+  padding-top: 20px;
+  text-align: center;
+  grid-column: col 1 / col 2;
+  background-color:rgba(25, 7, 90, 0.26);
+}
+.display{
+  font-size: 24px;
+  padding-top: 20px;
+  text-align: center;
+  grid-column: col 2 / col 3;
+  background-color:rgba(25, 7, 90, 0.26);
+}
